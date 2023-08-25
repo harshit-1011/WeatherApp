@@ -17,7 +17,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-   
+  
 }
 row{
     margin:0;
@@ -28,7 +28,7 @@ row{
 .navbar{
     color:#fff;
     background-color: var(--main-bg);
-    padding: 0rem 0;
+    padding: 1rem 0;
   
 }
 .navbar a{
@@ -43,7 +43,7 @@ row{
 }
 /* main header  */
 .main_header_left{
-    height: 50rem;
+    height: 40rem;
     display : flex;
     flex-direction: column;
     justify-content: center;
@@ -72,7 +72,7 @@ row{
     box-shadow: 0 8px 6px -6px var(--main-bg);
 }
 .main_header_right{
-    height: 50rem;
+    height: -30rem;
     display : flex;
     flex-direction: column;
     justify-content: center;
@@ -91,7 +91,7 @@ footer p{
     margin: 0;
     text-align: center;
     color: #fff;
-    line-height: 4rem;
+    line-height: 5rem;
     font-size:1.4rem;
 }
 /* responsive code  */
@@ -102,7 +102,16 @@ footer p{
     }
     .main_header_right{
         height: auto;
-        margin-top:3rem;
+        margin-top:3rem 0;
+    }
+    .temp_form{
+        width: auto;
+    }
+    .tempInformation{
+        width: auto;
+    }
+    .main_layer .middle_layer p,.main_layer .middle_layer .fa{
+        font-size: 5rem;
     }
 }
 /* error page style  */
