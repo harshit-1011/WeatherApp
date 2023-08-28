@@ -9,7 +9,7 @@ const getInfo =async (event) => {
     event.preventDefault();
     let cityVal = cityName.value;
 
-    if(cityVal===""){
+    if(cityVal==""){
 city_name.innerText=`plz write the name before search...!`;
 datahide.classList.add('data_hide')
     }
@@ -19,9 +19,9 @@ datahide.classList.add('data_hide')
             const response = await fetch(url);
             const data = await response.json();
             const arrData = [data];
-            city_name.innerText=`${arrData[0].name},${arrData[0].sys.contry}`;
+            city_name.innerText=`${arrData[0].name},${arrData[0].sys.country}`;
             temp_real_val.innerText= arrData[0].main.temp;
-            console.log(`${arrData[0].name},${arrData[0].sys.contry}`)
+            console.log(`${arrData[0].name},${arrData[0].sys.country}`)
             temp_status.innerText= arrData[0].weather[0].main;
              const tempMood = arrData[0].weather[0].main;
              //condition to check sunny or cloudy

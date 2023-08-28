@@ -14,12 +14,13 @@ html{
     font-size:62.5%;
 }
 body{
+    background:-webkit-repeating-linear-gradient(rgb(74, 77, 80));
     height: 100vh;
     display: flex;
     flex-direction: column;
-  
+  overflow: hidden;
 }
-row{
+.row{
     margin:0;
 }
 .main-menu{
@@ -214,3 +215,11 @@ width: 50rem;
     visibility: hidden;
     transition: all 0.3s linear;
  }
+ /* #fday{
+     float: right;
+ }
+#ftoday_date{
+    float:right;
+} */
+
+ 
